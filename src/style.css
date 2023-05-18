@@ -24,6 +24,7 @@ body {
     text-align: center;
 }
 
+/*section*/
 section{
     display: grid;
     place-items:center;
@@ -44,6 +45,8 @@ section{
     transform: translateX(0);
 }
 
+
+/*header*/
 header {
     padding : 35px;
     background-color: #465153;
@@ -113,7 +116,7 @@ h1 span {
 h2 {
     font-size: 20px;
     padding: auto;
-    color: #465153;
+    color: #ffffff;
   }
 
   .sub_slogan {
@@ -163,7 +166,6 @@ h5{
 
 
 /* footer style*/
-
 footer{
     background-color: #575d5f;
     position: sticky;
@@ -228,8 +230,6 @@ footer{
    text-align:center;
    font-size: 30px;
 }
-
-
 
 /* responsive*/
 @media (max-width: 700px) {
