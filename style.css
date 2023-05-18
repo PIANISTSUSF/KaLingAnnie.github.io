@@ -87,8 +87,31 @@ header ul #contact a:hover{
     background-color: rgb(55, 125, 187);
 }
 
+header-right{
+    float:right;
+}
+
 .active{
     color:#93a5e2;
+}
+
+/* responsive*/
+@media screen and (max-width: 1280px) {
+    header li {   
+        float:none;
+        display: block;
+        text-align: left;
+        transition: all 0.5s ease;
+    }
+
+    header-right{
+        float: none;
+        transform: translateX(.5s);
+    }
+    
+    .h1{
+        font-size: 25px;
+    }
 }
 
 img {
@@ -208,7 +231,7 @@ footer{
 .footerNav ul {
     display: flex;
     justify-content: center;
-    list-style:none;
+    list-style-type: disc;
 }
 
 .footerNav ul li a {
@@ -232,28 +255,14 @@ footer{
 }
 
 /* responsive*/
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .footerNav {   
-    width:50px;
-    margin-bottom:30px;
+        flex-direction: column;
     }
-}
- 
 
-@media (prefer-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
-@media (max-width: 400px) {
-    .footerContainer {   
-    width:100px;
-    }
-}
-
-@media (max-width: 400px) {
-    .header {   
-    width:100px;
-    }
+    .footerNav ul li{
+       width: 100%;
+       text-align: center;
+       margin:10px;
+    } 
 }
