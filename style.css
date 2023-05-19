@@ -79,6 +79,15 @@ img {
     transition: transform 0.3s;
   }
 
+.row{
+    display: flex;
+}
+
+.column{
+    flex: 33.33%;
+    padding:5px;
+}
+
 img:hover {
     transform: scale(1.03);
   }
